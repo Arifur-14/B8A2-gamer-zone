@@ -12,6 +12,25 @@ body {
     ;
 }
 
+/* buttton style */
+/* button {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    padding: 20px 40px;
+    border-radius: 48px;
+    border: none;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+} */
+
+.btn-gorouge {
+    margin-left: 15px;
+    background: #4EC5F7;
+}
+
 /* nav section styles */
 .nav {
     display: flex;
@@ -54,7 +73,7 @@ span {
     font-size: 1.1rem;
     font-weight: 500;
     color: #3C354F;
-   
+
 }
 
 .follow-link {
@@ -62,3 +81,207 @@ span {
     background: rgba(11, 2, 35, 0.10);
     padding: 10px;
 }
+
+/* main section styles */
+.main-container-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background: #FFF;
+}
+
+.section-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    /* text-align: center; */
+    text-transform: uppercase;
+}
+
+.text-design {
+    font-size: 95px;
+    font-weight: 800;
+    /* text-align: center; */
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-container-one ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.main-container-one li {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500px;
+    margin-top: 15px;
+}
+
+.main-container-two {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.main-container-two img {
+    width: 100%;
+    padding-left: 200px;
+}
+
+.content-section2 {
+    text-align: right;
+    margin-left: 200px;
+    padding-right: 200px;
+}
+
+.text-design2 {
+    font-size: 48px;
+    font-weight: 700;
+    /* text-align: center; */
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+strong {
+    font-size: 32px;
+}
+
+.main-container-three {
+    margin-top: 120px;
+}
+
+.video {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+    gap: 10px;
+}
+
+.video,img {
+    width: 50%;
+}
+
+.main-container-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.image-section{
+    margin-right: 250px;
+}
+
+.image-one{
+    margin-left: 120px;
+    width: 100%;
+}
+
+.image-two{
+    position: relative;
+    bottom: 200px;
+}
+
+.content-section3 {
+    text-align: right;
+    margin-right: 150px;
+}
+
+.content-section3 p{
+    margin-left: 160px;
+}
+.text-design3 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: right;
+}
+
+/* game link section style */
+.game-link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 250px;
+    margin-right: 250px;
+    
+}
+
+.game img{
+    width: 25%;
+}
+
+.game{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.game a{
+    text-decoration: none;
+    color: #3C354F;
+}
+
+.game a:hover{
+    color: #F948B2;
+}
+
+.game:hover{
+    border: 2px solid #F948B2;
+    border-radius: 50px;
+    color:#F948B2
+}
+
+/* footer section styles */
+footer{
+    background-color: #0B0223;
+    color: #FFF;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+footer .footer-title {
+    display: flex;
+    margin:10px 650px;
+    text-align: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.footer-title img{
+    width: 86px;
+    height: 40px;
+}
+footer>ul{
+    display: flex;
+    justify-content: center;
+    padding: 30px 400px;
+}
+footer li{
+    list-style: none;
+    font-size: 18px;
+}
+
+.social-media img{
+    width: 20px;
+    height: 20px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    padding: 30px 500px;
+}
+
+.policy>li{
+    color: rgba(255, 255, 255, 0.60);
+   
+}
+
