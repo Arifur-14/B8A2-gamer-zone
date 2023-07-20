@@ -175,7 +175,7 @@ strong {
 
 /* container three style*/
 .container-three {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .text-design-three{
@@ -184,7 +184,7 @@ strong {
     text-align: center;
 }
 
-.container-three p{
+.container-three .paragraph{
     color: #534C64;
     text-align: center;
     font-size: 18px;
@@ -192,32 +192,45 @@ strong {
     margin-top: 10px;
 }
 
-.video-item>ul{
+.image-gallery{
+    padding-top: 20px;
+    padding-left: 70px;
+}
+
+.image{
+    position: relative;
+    display: inline-block;
+}
+.image-img{
+    display: block;
+    width: 100%;
+}
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFFFFF;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    margin-top: 50px;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.image-overlay:hover{
+    opacity: 1;
 }
 
-.video-item>ul li{
-    list-style: none;
-    text-align: bottom;
+.image-title{
+    font-size: 2em;
+    font-weight: 500;
 }
-
-.video-item>ul>li p{
-    text-align: left;
-    font-size: 16px;
-}
-
-.video-item img {
-    width: 340px;
-    height: 400px;
-}
-
-.video-item, img:hover{
-    opacity: 0.7;
-    transition-duration: 2s;
+.image-description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
 }
 
 /* container four styles */
@@ -250,6 +263,7 @@ strong {
 .content-section-four p{
     margin-left: 160px;
 }
+
 .text-design-four {
     font-size: 48px;
     font-weight: 700;
@@ -261,9 +275,9 @@ strong {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    margin-left: 250px;
-    margin-right: 250px;
-    
+    align-items: center;
+    padding: 10px 240px;
+    gap: 10px;
 }
 
 .game img{
@@ -272,17 +286,13 @@ strong {
 
 .game{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;  
 }
 
 .game a{
     text-decoration: none;
     color: #3C354F;
-}
-
-.game a:hover{
-    color: #F948B2;
 }
 
 .game:hover{
@@ -296,6 +306,7 @@ footer{
     background-color: #0B0223;
     color: #FFF;
     margin-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 .footer-title {
@@ -337,11 +348,12 @@ footer>ul li{
    
 }
 
+/* responsive for mobile device */
 @media screen and (max-width: 576px) {
     .nav,
     .container-one,
     .container-two,
-    .video-item>ul,
+    .video,
     .container-four{
         flex-direction: column;
     }
@@ -349,34 +361,46 @@ footer>ul li{
         flex-direction: column;
         gap: 10px;
     }
+    .nav li a {
+        margin-right: 0px;
+    }
     .game-link{
         display: grid;
-        grid-template-columns: repeat(5, 5fr);
-        justify-content: space-around;
-        margin: 10px 10px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px 0px;
     }
     .content-section-one{
         margin: 0px;
-        padding: 50px;
+        padding: 0px;
     }
     .content-section-four{
         margin-right: 0px;
         padding: 20px;
     }
-    .image-section{
-        margin: 0px;
+    .image-gallery{
+        padding-left: 50px;
     }
-    .image-section img{
+    .image-section{
+        margin-right: 0px;
+    }
+    .image-section .image-one{
+        width: 70%;
+    }
+    .image-section .image-two{
         width: 50%;
     }
-    .photo-section img{
+    .photo-section-two img{
         width: 80%;
         margin-right: 0px;
-        padding: 50px;
+        margin-left: 10px;
+        padding: 0px;
+    }
+    .container-one img{
+        padding-left: 50px;
     }
     .container-two img {
         margin-left: 0px;
-        padding-left: 5px;
+        padding-left: 50px;
         
     }
     .content-section-two{
@@ -392,11 +416,15 @@ footer>ul li{
         padding: 5px 20px;
         text-align: center;
     }
+/* 
+    .video img{
+        margin-right: 0px;
+    } */
     .text-design-four{
         text-align: center;
     }
     strong{
-        font-size: 25px;
+        font-size: 20px;
     }
     .container-three{
         margin-top: 50px;
@@ -404,9 +432,7 @@ footer>ul li{
     .text-design-three{
         font-size: 30px;
     }
-    footer{
-        padding: 0px;
-    }
+    
     .footer-title{
         flex-direction: column;
     }
