@@ -207,6 +207,7 @@ strong {
 
 .video-item>ul>li p{
     text-align: left;
+    font-size: 16px;
 }
 
 .video-item img {
@@ -219,7 +220,8 @@ strong {
     transition-duration: 2s;
 }
 
-.main-container-four {
+/* container four styles */
+.container-four {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,25 +242,25 @@ strong {
     bottom: 200px;
 }
 
-.content-section3 {
+.content-section-four {
     text-align: right;
     margin-right: 150px;
 }
 
-.content-section3 p{
+.content-section-four p{
     margin-left: 160px;
 }
-.text-design3 {
+.text-design-four {
     font-size: 48px;
     font-weight: 700;
     text-align: right;
 }
 
-/* game link section style */
+/* container five style */
 .game-link{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:center;
     margin-left: 250px;
     margin-right: 250px;
     
@@ -271,8 +273,7 @@ strong {
 .game{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-   
+    align-items: center;  
 }
 
 .game a{
@@ -297,7 +298,7 @@ footer{
     margin-top: 100px;
     padding-bottom: 50px;
 }
-footer .footer-title {
+.footer-title {
     display: flex;
     margin:10px 650px;
     text-align: center;
@@ -315,7 +316,7 @@ footer>ul{
     justify-content: center;
     padding: 30px 400px;
 }
-footer li{
+footer>ul li{
     list-style: none;
     font-size: 18px;
 }
@@ -339,16 +340,34 @@ footer li{
 @media screen and (max-width: 576px) {
     .nav,
     .container-one,
-    .container-two{
+    .container-two,
+    .video-item>ul,
+    .container-four{
         flex-direction: column;
     }
     .nav>ul{
         flex-direction: column;
         gap: 10px;
     }
+    .game-link{
+        display: grid;
+        grid-template-columns: repeat(5, 5fr);
+        justify-content: space-around;
+        margin: 10px 10px;
+    }
     .content-section-one{
         margin: 0px;
         padding: 50px;
+    }
+    .content-section-four{
+        margin-right: 0px;
+        padding: 20px;
+    }
+    .image-section{
+        margin: 0px;
+    }
+    .image-section img{
+        width: 50%;
     }
     .photo-section img{
         width: 80%;
@@ -368,11 +387,43 @@ footer li{
         margin-left: 0px;
         padding: 5px;
     }
+    .content-section-four p{
+        margin: 10px 0px;
+        padding: 5px 20px;
+        text-align: center;
+    }
+    .text-design-four{
+        text-align: center;
+    }
     strong{
         font-size: 25px;
     }
     .container-three{
         margin-top: 50px;
+    }
+    .text-design-three{
+        font-size: 30px;
+    }
+    footer{
+        padding: 0px;
+    }
+    .footer-title{
+        flex-direction: column;
+    }
+    footer>ul, li{
+        flex-wrap: wrap;
+    }
+    .social-media{
+        flex-wrap: wrap;
+        padding: 10px 10px;
+    }
+    .footer-title{
+        margin: 10px 50px;
+    }
+    footer>ul, li{
+        padding: 5px 5px;
+        font-size: 10px;
+        text-align: left;
     }
 }
 
