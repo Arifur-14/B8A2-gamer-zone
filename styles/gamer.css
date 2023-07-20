@@ -416,10 +416,7 @@ footer>ul li{
         padding: 5px 20px;
         text-align: center;
     }
-/* 
-    .video img{
-        margin-right: 0px;
-    } */
+
     .text-design-four{
         text-align: center;
     }
@@ -432,7 +429,7 @@ footer>ul li{
     .text-design-three{
         font-size: 30px;
     }
-    
+    /* footer responsive */
     .footer-title{
         flex-direction: column;
     }
